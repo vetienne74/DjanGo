@@ -1,0 +1,33 @@
+
+================================================================================
+
+		 o-/\-o
+		 o-\_\-o
+		     \\                     ___
+		    /__\    O  __          /___\
+		   //  \\   \ / _\  /\  / //  __   /^\
+		  //    ||  /  /  \ \ \ \ ||  \_\ /   \
+		 / \____//  \  \__/ /  \/ \\___// \___/
+		 \______/ \_/              \___/
+
+			 D j a n G o - ver 1 (2023)
+
+ Git version 
+ 
+ 
+ Computations in SINGLE PRECISION
+================================================================================
+
+ list of command line parameters:
+ -cbx [N]       = block size along x-axis (grid points)
+ -cby [N]       = block size along y-axis (grid points)
+ -cbz [N]       = block size along z-axis (grid points)
+ -debug [OPT]   = debug trace OPT=none/light/mid/full
+ -dryrun        = dry run
+ -help or -h    = list of command line parameters
+ -iobufsize [N] = io buffer size (bytes)
+ -nsubx [N]     = number of subdomains along x-axis
+ -nsuby [N]     = number of subdomains along y-axis
+ -nsubz [N]     = number of subdomains along z-axis
+ -version or -v = print version information
+ -xml [NAME]    = NAME=path/name of xml config file
