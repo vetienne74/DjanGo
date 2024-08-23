@@ -12,7 +12,7 @@ Contact: Vincent Etienne / Email: vetienne@rocketmail.com
 ## Description
 
 DjanGo is a versatile C++ tool for modelling wave propagation
-with finite-difference & finite-element numerical methods. Initially developped for geophysical applications (seismic wave propagation), it includes now capabilities towards sound and music modelling. However, it should be possible to adapt DjanGo to model any kind of waves (mechanical, electromagnetic and so on). Anyone who is interested in using DjanGo or contributing to its development is invited to contact me.  
+with finite-difference & finite-element numerical methods. Initially developped for seismic wave propagation, it includes also capabilities for sound and music modelling. Moreover, it should be possible to adapt DjanGo to model any kind of waves (mechanical, electromagnetic and so on). Anyone who is interested in using DjanGo or contributing to its development is invited to contact me.  
 
 Features of DjanGo
 - Wave propagation formulation
@@ -44,7 +44,7 @@ Intensive test cases have been designed to validate accuracy and convergence.
 
 Version      | Description | Release date
 ------------ | ----------- | ------------
-v1.0         |  **Initial version** | December, 2023
+v1.0         |  **Initial version** | August 2024
 
 
 # Environment set-up
@@ -55,9 +55,9 @@ To use DjanGo on your computer
 * C++ compiler with OpenMP support
 * MPI library
 
-:bell: **The Linux environment is my favorite and all scripts in this projects are shell scripts that run on Linux.**
+:bell: **DjanGo has been developped under the Linux environment and all scripts in this projects are shell scripts that run on Linux.**
 
-DjanGo runs on CPU, development for GPU acceleration is on the way.
+DjanGo runs on CPU (support for GPU accelerators will be available sometime).
 
 To display figures and hear sounds with the provided material, Matlab is necessary.
 
@@ -69,7 +69,7 @@ In order to compile and run DjanGo, you need to source one of the files in the d
 
 Example to set up the environment for DjanGo with GCC compiler:
 
-`source ./source setEnvNeptuneGcc.sh`
+`source ./source setEnvMarsGcc.sh`
 
 [Display command output](misc/fileForReadme/setEnvDjanGo.txt)
 

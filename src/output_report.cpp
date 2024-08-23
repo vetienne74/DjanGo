@@ -51,7 +51,7 @@ Rtn_code print_header_of_output_report(void)
 		cout << "\t\t" << LOGO_DJANGO6 << "\n" ;
 		cout << "\t\t" << LOGO_DJANGO7 << "\n" ;
 		cout << "\t\t" << LOGO_DJANGO8 << "\n" ;
-		cout << "\n\t\t\t D j a n G o - ver " << CURRENT_VERSION << " (2023)\n\n" ;
+		cout << "\n\t\t\t D j a n G o - ver " << CURRENT_VERSION << " (2024)\n\n" ;
 
 		cout << " Git version " << DJANGO_GIT_COMMIT << "\n" ;
 		cout << " " << DJANGO_GIT_AUTHOR << "\n" ;

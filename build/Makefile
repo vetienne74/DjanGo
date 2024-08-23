@@ -71,6 +71,8 @@ endif
 
 DJANGO_CPP_FLAGCOMP+=-I. -I$(INC_DIR) -I$(EXPAT_INC_DIR) -I$(NR3_INC_DIR) -I${SRC_DIR} $(COPTION) -DHAVE_EXPAT_CONFIG_H
 
+DJANGO_GIT_VER=1
+
 #=====================#
 #     objects         #
 #=====================#
