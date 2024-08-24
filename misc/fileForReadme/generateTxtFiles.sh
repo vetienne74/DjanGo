@@ -22,6 +22,6 @@ ${DJANGO_DIR}/bin/django -h | tee commandLineParam.txt
 ${DJANGO_DIR}/bin/django -v | tee version.txt
 
 # run validation tests
-cd ${DJANGO_DIR}/validation/
+cd ${DJANGO_DIR}/script/
 sh runValidationTests.sh | tee ${DJANGO_DIR}/misc/fileForReadme/runValidationTests.txt
 

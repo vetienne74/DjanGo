@@ -99,7 +99,7 @@ Some additional tools are provided and need also to be compiled. Go to `./misc/t
 
 ## Validation tests
 
-To check that DhanGo has correctly been built and works fine, go to `./validation` and launch
+To check that DhanGo has correctly been built and works fine, go to `./script` and launch
 
 `sh runValidationTests.sh`
 
@@ -133,7 +133,7 @@ DjanGo can be launched from a terminal with all configuration parameters within 
 
 # Directory description
 
-appli: applications
+appli: applications (not yet available)
 
 bin: binaries
 
