@@ -17,17 +17,17 @@ Test_Django_version ...
 
 			 D j a n G o - ver 1 (2024)
 
- Git version commit bbd4a4fb8c1a0d9c3eb7635116afddcc1090e0cd
+ Git version commit 170727c2670c06eefff9480f0d94beb33ecdc0f0
  Author: vincent <vetienne@rocketmail.com>
- Date:   Fri Aug 23 21:28:22 2024 +0200
+ Date:   Sat Aug 24 14:27:46 2024 +0200
  Computations in SINGLE PRECISION
 ================================================================================
 
 SKIP /home/vincent/WORK_DIR/DjanGo/validation/modelling/eigen_mode/1D_case
 SKIP /home/vincent/WORK_DIR/DjanGo/validation/modelling/eigen_mode/1D_case
 
-# Started  :  Sat Aug 24 02:16:03 PM CEST 2024
-# Ended    :  Sat Aug 24 02:16:04 PM CEST 2024
+# Started  :  Sat Aug 24 02:36:18 PM CEST 2024
+# Ended    :  Sat Aug 24 02:36:18 PM CEST 2024
 On machine :  mars
 Done by    :  vincent
 

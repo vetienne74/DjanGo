@@ -12,7 +12,7 @@ Contact: Vincent Etienne / Email: vetienne@rocketmail.com
 ## Description
 
 DjanGo is a versatile C++ tool for modelling wave propagation
-with finite-difference & finite-element numerical methods. Initially developped for seismic wave propagation, it includes also capabilities for sound and music modelling. Moreover, it should be possible to adapt DjanGo to model any kind of waves (mechanical, electromagnetic and so on). Anyone who is interested in using DjanGo or contributing to its development is invited to contact me.  
+with finite-difference & finite-element methods. It targets applications towards wave propagation in water and sound modelling. Anyone who is interested in using DjanGo or contributing to its development is invited to contact me.  
 
 Features of DjanGo
 - Wave propagation formulation
@@ -51,7 +51,7 @@ v1.0         |  **Initial version** | August 2024
 
 ## Basic requirements
 
-To use DjanGo on your computer
+To use DjanGo on your computer you need
 * C++ compiler with OpenMP support
 * MPI library
 

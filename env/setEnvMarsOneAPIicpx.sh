@@ -29,11 +29,6 @@ export DJANGO_HIP=
 export DJANGO_HIP_FLAGCOMP=
 export DJANGO_HIP_LIB=
 
-# display DjanGo settings
+# display settings
 sh ./displayDjanGoEnv.sh
-
-# DjanGo bin dir
-cd ..
-export DJANGO_DIR=$(pwd)
-cd -
 

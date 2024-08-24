@@ -1,5 +1,5 @@
 
-echo DjanGo set for `hostname` with:
+echo DjanGo is set on machine `hostname` with:
 echo - C++ Compiler
 $DJANGO_CPP --version
 
@@ -24,5 +24,5 @@ echo - MPI library
 $DJANGO_MPI_INVOKER --version
 echo - Number of OpenMP threads $DJANGO_NTHREADS
 
-echo Ready to go!
+echo You are ready to go!
 

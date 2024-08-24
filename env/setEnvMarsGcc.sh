@@ -30,6 +30,6 @@ export DJANGO_HIP=
 export DJANGO_HIP_FLAGCOMP=
 export DJANGO_HIP_LIB=
 
-# display Hpcscan settings
+# display settings
 sh ./displayDjanGoEnv.sh
 
