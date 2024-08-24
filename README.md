@@ -69,7 +69,7 @@ In order to compile and run DjanGo, you need to source one of the files in the d
 
 Example to set up the environment for DjanGo with GCC compiler:
 
-`source ./source setEnvMarsGcc.sh`
+`source setEnvMarsGcc.sh`
 
 [Display command output](misc/fileForReadme/setEnvDjanGo.txt)
 

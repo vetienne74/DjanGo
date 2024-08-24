@@ -1,8 +1,8 @@
 mpic++ -c -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I. -I../include -I../misc/external/expat-2-2-0 -I../misc/external/Numerical-Recipes -I../src  -DHAVE_EXPAT_CONFIG_H ../src/program.cpp
-Files version and ../src/version_django.h differ
-version has changed, regenerating version info
 mpic++ -c -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I. -I../include -I../misc/external/expat-2-2-0 -I../misc/external/Numerical-Recipes -I../src  -DHAVE_EXPAT_CONFIG_H ../src/program_modelling.cpp
 mpic++ -c -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I. -I../include -I../misc/external/expat-2-2-0 -I../misc/external/Numerical-Recipes -I../src  -DHAVE_EXPAT_CONFIG_H ../src/program_fwi.cpp
+Files version and ../src/version_django.h differ
+version has changed, regenerating version info
 mpic++ -c -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I. -I../include -I../misc/external/expat-2-2-0 -I../misc/external/Numerical-Recipes -I../src  -DHAVE_EXPAT_CONFIG_H ../src/program_rtm.cpp
 mpic++ -c -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I. -I../include -I../misc/external/expat-2-2-0 -I../misc/external/Numerical-Recipes -I../src  -DHAVE_EXPAT_CONFIG_H ../src/program_guitar.cpp
 mpic++ -c -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I. -I../include -I../misc/external/expat-2-2-0 -I../misc/external/Numerical-Recipes -I../src  -DHAVE_EXPAT_CONFIG_H ../src/scheme.cpp

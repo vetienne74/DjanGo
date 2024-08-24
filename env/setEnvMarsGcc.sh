@@ -6,7 +6,7 @@
 export DJANGO_MPI_INVOKER='mpirun'
 
 # OpenMP config
-export DJANGO_NTHREADS=2
+export DJANGO_NTHREADS=4
 export KMP_AFFINITY=granularity=fine,compact
 export OMP_NUM_THREADS=$DJANGO_NTHREADS
 
