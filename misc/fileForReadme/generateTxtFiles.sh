@@ -1,7 +1,7 @@
 
 # set up environment
 cd ../../env/
-. ./setEnvNeptuneGcc.sh > ../misc/fileForReadme/setEnvDjanGo.txt
+. ./setEnvMarsGcc.sh > ../misc/fileForReadme/setEnvDjanGo.txt
 cat ../misc/fileForReadme/setEnvDjanGo.txt
 
 # build DjanGo

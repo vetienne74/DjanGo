@@ -9,26 +9,18 @@ mpic++ -c -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include
 mpic++ -c -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  ../src/check_file.cpp
 mpic++ -c -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  ../src/check_rms.cpp
 mpic++ -c -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  ../src/compute_element_matrices.cpp
-mpic++ -c -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  ../src/compute_fdm_weights.cpp
 mpic++ -c -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  ../src/convert_1D_to_2D.cpp
-mpic++ -c -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  ../src/data_analysis.cpp
 mpic++ -c -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  ../src/double2single.cpp
 mpic++ -c -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  ../src/eigen_sol.cpp
-mpic++ -c -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  ../src/freq_list.cpp
-mpic++ -c -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  ../src/hello_world.cpp
 mpic++ -c -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  ../src/mulgrid.cpp
 mpic++ -c -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  ../src/single2double.cpp
 mpic++ -c -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  ../src/subgrid.cpp
-mpic++ -c -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  ../src/test_complex_2D.cpp
-mpic++ -c -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  ../src/test_complex_3D.cpp
 mpic++ -c -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  ../src/transpose.cpp
 mpic++ -c -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  ../src/transpose_2d.cpp
-mpic++ -c -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  ../src/test_OpenMP.cpp
-mpic++ -c -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  ../src/test_nr3.cpp
 mpic++ -c -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  ../src/wavelet.cpp
-mpif90 -c -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  ../src/EX2DDIR_Berg_If.f
-mpif90 -c -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  ../src/EX2DVAEL_Berg_If.f
-mpif90 -c -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  ../src/EX2DELEL_Berg_If.f
+mpif90 -c -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  ../../../misc/external/EX2D/EX2DDIR_Berg_If.f
+mpif90 -c -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  ../../../misc/external/EX2D/EX2DVAEL_Berg_If.f
+mpif90 -c -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  ../../../misc/external/EX2D/EX2DELEL_Berg_If.f
 mpic++ -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  -o ../../../bin/analytic_homo analytic_homo.o 
 mpic++ -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  -o ../../../bin/analytic_layer analytic_layer.o 
 mpic++ -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  -o ../../../bin/build_acqui_file build_acqui_file.o 
@@ -40,22 +32,14 @@ mpic++ -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I
 mpic++ -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  -o ../../../bin/check_file check_file.o 
 mpic++ -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  -o ../../../bin/check_rms check_rms.o 
 mpic++ -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  -o ../../../bin/compute_element_matrices compute_element_matrices.o 
-mpic++ -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  -o ../../../bin/compute_fdm_weights compute_fdm_weights.o 
 mpic++ -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  -o ../../../bin/convert_1D_to_2D convert_1D_to_2D.o 
-mpic++ -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  -o ../../../bin/data_analysis data_analysis.o 
 mpic++ -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  -o ../../../bin/double2single double2single.o 
 mpic++ -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  -o ../../../bin/eigen_sol eigen_sol.o 
-mpic++ -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  -o ../../../bin/freq_list freq_list.o 
-mpic++ -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  -o ../../../bin/hello_world hello_world.o 
 mpic++ -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  -o ../../../bin/mulgrid mulgrid.o 
 mpic++ -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  -o ../../../bin/single2double single2double.o 
 mpic++ -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  -o ../../../bin/subgrid subgrid.o 
-mpic++ -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  -o ../../../bin/test_complex_2D test_complex_2D.o 
-mpic++ -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  -o ../../../bin/test_complex_3D test_complex_3D.o 
 mpic++ -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  -o ../../../bin/transpose transpose.o 
 mpic++ -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  -o ../../../bin/transpose_2d transpose_2d.o 
-mpic++ -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  -o ../../../bin/test_OpenMP test_OpenMP.o 
-mpic++ -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  -o ../../../bin/test_nr3 test_nr3.o 
 mpic++ -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  -o ../../../bin/wavelet wavelet.o 
 mpif90 -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  -o ../../../bin/EX2DDIR_Berg_If EX2DDIR_Berg_If.o 
 mpif90 -w -g -O3 -fopenmp -ffast-math -fpermissive -mavx2 -I ../../../include -I../../../misc/external/Numerical-Recipes  -o ../../../bin/EX2DVAEL_Berg_If EX2DVAEL_Berg_If.o 

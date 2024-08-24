@@ -1,4 +1,4 @@
-DjanGo set for neptune with:
+DjanGo set for mars with:
 - C++ Compiler
 g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0
 Copyright (C) 2021 Free Software Foundation, Inc.
