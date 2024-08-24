@@ -4,8 +4,8 @@
 #
 ##################################################################
 
-export rms_max=0.11
-export test_1d=0
+export rms_max=0.10
+export test_1d=1
 export test_2d=0
 export test_3d=0
 export appli_1d=0
@@ -16,28 +16,28 @@ export report_file=$1
 # test DjanGo version
 #-----------------------------------------------------------------
 
-test_name=Test_Django_version
-echo
-echo $test_name ...
+test_name=Django_version
+echo | tee $report_file
+echo Running $test_name ... | tee $report_file
 
 mpirun -n 1 $DJANGO_DIR/bin/django -version > tmp
 
 tmp_str=$(grep "D j a n G o" tmp)
 if [ -z "$tmp_str" ]
 then
-    cat tmp
-    echo $test_name FAILED >> $report_file
+    echo "> FAILED" | tee -a $report_file
 else
-    echo $test_name PASSED >> $report_file
-    cat tmp
+    echo "> PASSED" | tee -a $report_file
 fi
+#cat tmp
+rm tmp
 
 #-----------------------------------------------------------------
-# test 1D
+# test eigen mode 1D dryrun
 #-----------------------------------------------------------------
 
-test_dir=$DJANGO_DIR/validation/modelling/eigen_mode/1D_case
-test_name=$test_dir
+test_name=eigen_mode/1D
+test_dir=$DJANGO_DIR/script/$test_name
 test_opt=-dryrun
 if [ "$test_1d" -eq 0 ]
 then
@@ -46,19 +46,17 @@ else
     sh ./runDjango.sh $report_file $test_name $test_dir $test_opt
 fi
 
-test_name=$test_dir
-test_opt=
-if [ "$test_1d" -eq 0 ]
-then
-    echo SKIP $test_name
-else
-    sh ./runDjango.sh $report_file $test_name $test_dir $test_opt
-fi
+#test_name=$test_dir
+#test_opt=
+#if [ "$test_1d" -eq 0 ]
+#then
+#    echo SKIP $test_name
+#else
+#    sh ./runDjango.sh $report_file $test_name $test_dir $test_opt
+#fi
 
 #-----------------------------------------------------------------
 # End of validation tests
 #-----------------------------------------------------------------
-
-rm tmp
 
 # END OF FILE

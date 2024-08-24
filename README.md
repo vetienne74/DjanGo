@@ -105,16 +105,14 @@ To check that DhanGo has correctly been built and works fine, go to `./validatio
 
 [Display command output](misc/fileForReadme/runValidationTests.txt)
 
-This script runs a set a light test cases and should complete within few minutes (even on a laptop).
+This script runs a set a light test cases and should complete within few minutes on a laptop.
 
 You should get in the ouptput report (displayed on the terminal)
 
-* All tests marked as PASSED (437 tests passed)
+* All tests marked as PASSED
 * No test marked as FAILED
 
 Check the summary at the end of report to have a quick look on this.
-
-:bell: These tests are intended for validation purpose only, they do not allow for performance measurements.
 
 ## Validated hardware, operating systems and compilers
 

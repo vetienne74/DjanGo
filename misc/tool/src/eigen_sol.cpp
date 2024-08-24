@@ -148,7 +148,7 @@ int main(int argc, char* argv[])
   //------------------------------------------------------
 
   // open output file
-  ofstream out_file("pr.time.rec.eigen_sol.out", ios::binary | ios::trunc | ios::out) ;
+  ofstream out_file("pr.time.rec.eigen_sol.out.bin", ios::binary | ios::trunc | ios::out) ;
 
   if (acqui_dim == 1)
     {

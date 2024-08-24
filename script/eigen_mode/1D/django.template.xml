@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<django version="1">
+  <program type="modelling">
+
+    <domain>
+      <model dimension="1" type="grid">
+	<size nz="101"/>
+	<sampling dz="0.01" dzrandom="_DZRANDOM_" />
+	<parameter type="vp" constant="1.0"/>
+	<parameter type="loss1" constant="0.0"/>
+	<parameter type="loss2" constant="0.0"/>
+      </model>
+     
+      <scheme method="_SCHm_" type="_SCHt_">
+	<equation type="_EQt_" order="_EQo_"/>
+	<accuracy space="_ACCs_" time="2" dt="0.0"/>
+	<node type="_NODE_" distribution="_DIST_" integration="_QUAD_"/>
+	<flux type="centered"/>
+	<adaptivity pmin="1" pmax="4"/>
+	<boundary edge="zbeg" type="freesurf"/>
+	<boundary edge="zend" type="freesurf"/>
+	<!--boundary edge="zbeg" type="rigid"/-->
+	<!--boundary edge="zend" type="rigid"/-->
+      </scheme>
+    </domain>
+
+    <modelling case="eigen">    
+      <time tmax="4.0" dt="0.005"/>
+      <!--snapshot tmin="0.0" tmax="0.2" dt="0.001"/-->
+      <acquisition file="acquisition.config.out.txt"/> 
+    </modelling>
+    
+  </program>
+</django>

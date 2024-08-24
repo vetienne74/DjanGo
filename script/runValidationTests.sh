@@ -17,7 +17,7 @@ then
 else
     reportFile=runValidationTests.${machine}.${tester}.double.out
 fi
-reportFileWithPath=${DJANGO_DIR}/validation/$reportFile
+reportFileWithPath=${DJANGO_DIR}/script/$reportFile
 rm -f $reportFile
 
 echo "========================================================================" 
