@@ -1,0 +1,16 @@
+
+Description:
+------------
+Validation test in homogeneous medium without boundaries
+2 points are validated:
+- solution against analytical solution
+- source consistency (retrieved from computated wavefield)
+
+How to run the tests:
+---------------------
+- solution against analytical solution
+type sh run.sh
+use Matlab script check.m
+
+- source consistency (retrieved from computated wavefield)
+use Matlab script fdm_1d.m and valid_wave.m

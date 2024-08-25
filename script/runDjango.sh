@@ -19,8 +19,6 @@ else
     exit
 fi
 
-sh ${DJANGO_DIR}/script/clean.sh
-
 sh prepare.sh > tmp
 
 # loop on all *.xml files present in the directory
@@ -90,6 +88,7 @@ for test_xml in $( ls django.config*.xml); do
 
 done
 
+# clean test dir
 sh ${DJANGO_DIR}/script/clean.sh
 
 rm tmp

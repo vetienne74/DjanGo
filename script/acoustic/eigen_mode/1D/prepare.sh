@@ -1,4 +1,6 @@
 
+sh clean.sh
+
 # build xml config files
 echo === build xml config files ===
 python3 build_config_xml.py

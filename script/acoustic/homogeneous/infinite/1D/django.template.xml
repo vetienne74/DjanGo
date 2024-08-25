@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<django version="1">
+  <program type="modelling">
+
+    <domain>
+      <model dimension="1" type="grid">
+	<size nz="_NZ_"/>
+	<sampling dz="_H_"/>
+	<parameter type="vp" constant="4000.0"/>
+	<parameter type="loss1" constant="0.0"/>
+	<parameter type="loss2" constant="0.0"/>
+      </model>
+     
+      <scheme method="_METHOD_" type="_TYPE_">
+	<mesh nelz="_NELZ_" properties="linear"/>
+	<equation type="_EQt_" order="_WEQ_"/>
+	<accuracy space="_ORDER_" time="2" dt="_DT_"/>
+	<node type="GLL" distribution="uniform" integration="GLL"/>
+	<flux type="centered"/>
+	<_BOUND1_/>
+	<_BOUND2_/>
+      </scheme>
+    </domain>
+
+    <modelling>
+      <time tmax="4.0" dt="0.005"/>            
+      <acquisition file="_ACQUI_"/>      
+      <_SRC_/>      
+    </modelling>
+    
+  </program>
+</django>
