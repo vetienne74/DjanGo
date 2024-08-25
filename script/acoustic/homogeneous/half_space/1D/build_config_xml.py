@@ -60,15 +60,15 @@ for boundary in ['sponge']:
                     if (boundary == 'pml'):
                         #new_line=new_line.replace('_BOUND1_', 'boundary edge="zbeg" type="cpml" width="10" coef="1.e-12"')
                         new_line=new_line.replace('_BOUND2_', 'boundary edge="zend" type="cpml" width="10" coef="1.e-12"')
-                        new_line=new_line.replace('_ACQUI_', 'acqui_cpml.config.out.txt')
+                        new_line=new_line.replace('_ACQUI_', 'acqui_cpml.config.out.ascii')
                         new_line=new_line.replace('_NZ_', '4001')
                     elif (boundary == 'sponge'):
                         #new_line=new_line.replace('_BOUND1_', 'boundary edge="zbeg" type="sponge" width="20" coef="0.015"')
                         new_line=new_line.replace('_BOUND2_', 'boundary edge="zend" type="sponge" width="20" coef="0.015"')
-                        new_line=new_line.replace('_ACQUI_', 'acqui_cpml.config.out.txt')
+                        new_line=new_line.replace('_ACQUI_', 'acqui_cpml.config.out.ascii')
                         new_line=new_line.replace('_NZ_', '4001')
                     else:
-                        new_line=new_line.replace('_ACQUI_', 'acqui_no_cpml.config.out.txt')
+                        new_line=new_line.replace('_ACQUI_', 'acqui_no_cpml.config.out.ascii')
                         new_line=new_line.replace('_NZ_', '8001')
                     f2.write(new_line)
 f1.close()
@@ -135,19 +135,19 @@ for type_m in type_method:
                         if (boundary == 'pml'):
                             #new_line=new_line.replace('_BOUND1_', 'boundary edge="zbeg" type="cpml" width="10" coef="1.e-12"')
                             new_line=new_line.replace('_BOUND2_', 'boundary edge="zend" type="cpml" width="10" coef="1.e-12"')
-                            new_line=new_line.replace('_ACQUI_', 'acqui_cpml.config.out.txt')
+                            new_line=new_line.replace('_ACQUI_', 'acqui_cpml.config.out.ascii')
                             new_line=new_line.replace('_NZ_', '2001')
                             new_line=new_line.replace('_NELZ_', '800')
                         elif (boundary == 'sponge'):
                             #new_line=new_line.replace('_BOUND1_', 'boundary edge="zbeg" type="sponge" width="5" coef="0.92"')
                             new_line=new_line.replace('_BOUND2_', 'boundary edge="zend" type="sponge" width="5" coef="0.92"')
-                            new_line=new_line.replace('_ACQUI_', 'acqui_cpml.config.out.txt')
+                            new_line=new_line.replace('_ACQUI_', 'acqui_cpml.config.out.ascii')
                             new_line=new_line.replace('_NZ_', '2001')
                             new_line=new_line.replace('_NELZ_', '800')
                         else:
                             new_line=new_line.replace('_BOUND1_', 'boundary edge="zbeg" type="freesurf"')
                             new_line=new_line.replace('_BOUND2_', 'boundary edge="zend" type="freesurf"')
-                            new_line=new_line.replace('_ACQUI_', 'acqui_no_cpml.config.out.txt')
+                            new_line=new_line.replace('_ACQUI_', 'acqui_no_cpml.config.out.ascii')
                             new_line=new_line.replace('_NZ_', '4001')
                             new_line=new_line.replace('_NELZ_', '1600')
                         f2.write(new_line)

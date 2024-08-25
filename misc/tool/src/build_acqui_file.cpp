@@ -27,7 +27,7 @@ int main(int argc, char* argv[])
   // open output file
   //-------------------------------
 
-  ofstream out_file("acquisition.config.out.txt", ios::trunc | ios::out) ;
+  ofstream out_file("acquisition.config.out.ascii", ios::trunc | ios::out) ;
 
   //-------------------------------
   // read input parameters

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<django version="1">
+  <program type="modelling">
+
+    <domain>
+      <model dimension="2" type="grid">
+	<size nz="_NZ_" nx="_NX_"/>
+	<sampling dz="_DZ_" dx="_DX_"/>	
+	<parameter type="vp" constant="4000.0"/>
+	<parameter type="vs" constant="0.0"/>
+	<parameter type="rho" constant="1.0"/>
+      </model>
+     
+      <scheme method="_SCHm_" type="_SCHt_">
+	<equation type="_EQt_" order="_EQo_"/>
+	<accuracy space="_ACCs_" time="2" dt="0.0"/>
+	<node type="GLL" distribution="uniform" integration="GLL"/>
+	<flux type="centered"/>
+	<boundary edge="zbeg" type="freesurf"/>
+	<_BOUND2_/>
+	<_BOUND3_/>
+	<_BOUND4_/>
+      </scheme>
+    </domain>
+
+    <modelling>
+      <time tmax="1.5" dt="0.001"/>
+      <source type="_SRC_TYPE_" sigma="1" subtype="explosive" function="file" name="_RICKER_.out.bin" dt="0.001"/> 
+      <acquisition file="_ACQUI_"/> 
+    </modelling>
+    
+  </program>
+</django>

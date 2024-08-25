@@ -89,6 +89,20 @@ else
 fi
 
 #-----------------------------------------------------------------
+# test acoustic homogeneous infinite 2D
+#-----------------------------------------------------------------
+
+test_name=acoustic/homogeneous/infinite/2D
+test_dir=$DJANGO_DIR/script/$test_name
+test_opt=
+if [ "$test_2d" -eq 0 ]
+then
+    echo SKIP $test_name
+else
+    sh ./runDjango.sh $report_file $test_name $test_dir $test_opt
+fi
+
+#-----------------------------------------------------------------
 # test acoustic homogeneous half-space 1D
 #-----------------------------------------------------------------
 
@@ -96,6 +110,20 @@ test_name=acoustic/homogeneous/half_space/1D
 test_dir=$DJANGO_DIR/script/$test_name
 test_opt=
 if [ "$test_1d" -eq 0 ]
+then
+    echo SKIP $test_name
+else
+    sh ./runDjango.sh $report_file $test_name $test_dir $test_opt
+fi
+
+#-----------------------------------------------------------------
+# test acoustic homogeneous half-space 2D
+#-----------------------------------------------------------------
+
+test_name=acoustic/homogeneous/half_space/2D
+test_dir=$DJANGO_DIR/script/$test_name
+test_opt=
+if [ "$test_2d" -eq 0 ]
 then
     echo SKIP $test_name
 else

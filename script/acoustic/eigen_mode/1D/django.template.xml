@@ -27,7 +27,7 @@
     <modelling case="eigen">    
       <time tmax="4.0" dt="0.005"/>
       <!--snapshot tmin="0.0" tmax="0.2" dt="0.001"/-->
-      <acquisition file="acquisition.config.out.txt"/> 
+      <acquisition file="acquisition.config.out.ascii"/> 
     </modelling>
     
   </program>

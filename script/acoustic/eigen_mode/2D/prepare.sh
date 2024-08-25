@@ -18,7 +18,7 @@ EOF
 
 # compute analytical solution
 ${DJANGO_DIR}/bin/eigen_sol <<EOF
-acquisition.config.out.txt
+acquisition.config.out.ascii
 0.0
 3.0
 0.3535

@@ -2,7 +2,7 @@
 nt=801
 
 ${DJANGO_DIR}/bin/analytic_homo <<EOF
-acqui_cpml.config.out.txt
+acqui_cpml.config.out.ascii
 4000.0
 10.0
 0.005

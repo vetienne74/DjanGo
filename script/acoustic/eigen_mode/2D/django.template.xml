@@ -30,7 +30,7 @@
       <time tmax="3.0" dt="0.3535"/>
       <!--snapshot tmin="0.3535" tmax="3.0" dt="0.7071"/-->
       <!--snapshot tmin="0.3535" tmax="3.0" dt="0.7071"/-->
-      <acquisition file="acquisition.config.out.txt"/> 
+      <acquisition file="acquisition.config.out.ascii"/> 
     </modelling>
     
   </program>

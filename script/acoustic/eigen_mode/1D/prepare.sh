@@ -18,7 +18,7 @@ EOF
 
 # compute analytical solution
 ${DJANGO_DIR}/bin/eigen_sol <<EOF
-acquisition.config.out.txt
+acquisition.config.out.ascii
 0.0
 4.0
 0.005
@@ -29,5 +29,3 @@ exit
 nt=801
 file_in=pr.time.rec.eigen_sol.out.bin
 ximage < ${file_in} n1=$nt perc=99 title=${file_in} &
-
-

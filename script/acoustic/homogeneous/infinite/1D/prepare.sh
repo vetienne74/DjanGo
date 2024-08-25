@@ -16,7 +16,7 @@ ${DJANGO_DIR}/bin/build_acqui_file <<EOF
 2000.
 EOF
 
-mv acquisition.config.out.txt acqui_cpml.config.out.txt
+mv acquisition.config.out.ascii acqui_cpml.config.out.ascii
 
 # acquisition without cpml
 ${DJANGO_DIR}/bin/build_acqui_file <<EOF
@@ -29,7 +29,7 @@ ${DJANGO_DIR}/bin/build_acqui_file <<EOF
 2000.
 EOF
 
-mv acquisition.config.out.txt acqui_no_cpml.config.out.txt
+mv acquisition.config.out.ascii acqui_no_cpml.config.out.ascii
 
 # analytic solution
 sh analytic_homo.sh
