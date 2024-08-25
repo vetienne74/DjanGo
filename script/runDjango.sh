@@ -4,9 +4,9 @@ export test_name=$2
 export test_dir=$3
 export test_opt=$4
 
-failed="> FAILED"
-passed="> PASSED"
-warning="> WARNING"
+failed="FAILED"
+passed="PASSED"
+warning="WARNING"
 
 echo ""
 echo "Running $test_name ..." | tee -a ${report_file} 
@@ -75,13 +75,16 @@ for test_xml in $( ls django.config*.xml); do
 	if [ "$test_opt" != "-dryrun" ]
 	then
 	    # check ouput binary file are Ok (no NaN, nor Inf)
-	    ${DJANGO_DIR}/script/check_files.sh ${report_file}
+	    sh ${DJANGO_DIR}/script/checkFiles.sh ${report_file}
 
 	    # check numerical solution	
 	    if [ -f "check.sh" ]
 	    then
 		sh check.sh $test_xml >> ${report_file}
-	    fi	   
+	    fi
+
+	    # clean DjanGo output files
+	    rm -f *django.out.bin
 	fi
     fi
 

@@ -25,15 +25,15 @@ mpirun -n 1 $DJANGO_DIR/bin/django -version > tmp
 tmp_str=$(grep "D j a n G o" tmp)
 if [ -z "$tmp_str" ]
 then
-    echo "> FAILED" | tee -a $report_file
+    echo "FAILED" >> $report_file
 else
-    echo "> PASSED" | tee -a $report_file
+    echo "PASSED" >> $report_file
 fi
 #cat tmp
 rm tmp
 
 #-----------------------------------------------------------------
-# test eigen mode 1D dryrun
+# test eigen mode 1D [dryrun]
 #-----------------------------------------------------------------
 
 test_name=eigen_mode/1D
@@ -46,14 +46,17 @@ else
     sh ./runDjango.sh $report_file $test_name $test_dir $test_opt
 fi
 
-#test_name=$test_dir
-#test_opt=
-#if [ "$test_1d" -eq 0 ]
-#then
-#    echo SKIP $test_name
-#else
-#    sh ./runDjango.sh $report_file $test_name $test_dir $test_opt
-#fi
+#-----------------------------------------------------------------
+# test eigen mode 1D
+#----------------------------------------------------------------
+
+test_opt=
+if [ "$test_1d" -eq 0 ]
+then
+    echo SKIP $test_name
+else
+    sh ./runDjango.sh $report_file $test_name $test_dir $test_opt
+fi
 
 #-----------------------------------------------------------------
 # End of validation tests

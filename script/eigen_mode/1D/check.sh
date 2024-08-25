@@ -18,8 +18,6 @@ grep Numerical tmp
 file_1=pr.time.rec.django.out.bin
 file_2=pr.time.rec.eigen_sol.out.bin
 
-#${CWPROOT}/bin/transp < $file_1 > ${file_1}.tr n1=$nrec
-
 ${DJANGO_DIR}/bin/check_rms >> tmp_check <<EOF
 ${file_1}
 $file_2
@@ -39,4 +37,3 @@ else
 fi
 
 rm tmp_check
-rm ${file_1}.tr

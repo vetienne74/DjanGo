@@ -28,6 +28,13 @@ int main(int argc, char* argv[])
 
   cout << "\n=== eigen_sol started... ===\n" ; 
 
+  // single or double precision
+  #ifdef _DOUBLE_PRECISION_
+	  cout << " Computations in DOUBLE PRECISION\n" ;
+  #else
+		cout << " Computations in SINGLE PRECISION\n" ;
+  #endif
+
   //-------------------------------
   // read input paramters
   //-------------------------------
