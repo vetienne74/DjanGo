@@ -131,6 +131,34 @@ else
 fi
 
 #-----------------------------------------------------------------
+# test acoustic layer infinite 1D
+#-----------------------------------------------------------------
+
+test_name=acoustic/layer/infinite/1D
+test_dir=$DJANGO_DIR/script/$test_name
+test_opt=
+if [ "$test_1d" -eq 0 ]
+then
+    echo SKIP $test_name
+else
+    sh ./runDjango.sh $report_file $test_name $test_dir $test_opt
+fi
+
+#-----------------------------------------------------------------
+# test acoustic layer infinite 2D
+#-----------------------------------------------------------------
+
+test_name=acoustic/layer/infinite/2D
+test_dir=$DJANGO_DIR/script/$test_name
+test_opt=
+if [ "$test_2d" -eq 0 ]
+then
+    echo SKIP $test_name
+else
+    sh ./runDjango.sh $report_file $test_name $test_dir $test_opt
+fi
+
+#-----------------------------------------------------------------
 # End of validation tests
 #-----------------------------------------------------------------
 

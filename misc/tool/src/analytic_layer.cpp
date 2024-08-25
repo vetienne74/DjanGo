@@ -166,7 +166,7 @@ int main(int argc, char* argv[])
   cout << " trans_coef " << trans_coef << endl ;
 	      
   // open output file
-  ofstream out_file("pr.time.rec.analytic_layer.out", ios::binary | ios::trunc | ios::out) ;
+  ofstream out_file("pr.time.rec.analytic_layer.out.bin", ios::binary | ios::trunc | ios::out) ;
   
   for (Myint isrc = 0; isrc < nsrc; isrc++)
     {

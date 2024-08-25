@@ -12,9 +12,9 @@
 
 			 D j a n G o - ver 1 (2024)
 
- Git version commit c5e2ab3e1b16163befedb6e0fd449cbdf4784ec0
+ Git version commit eb052cfeb0a330d473e7e2f299d0f0d04ab5ea3f
  Author: vincent <vetienne@rocketmail.com>
- Date:   Sun Aug 25 16:52:53 2024 +0200
+ Date:   Sun Aug 25 18:03:14 2024 +0200
  Computations in SINGLE PRECISION
 ================================================================================
 
