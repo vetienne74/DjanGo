@@ -6,7 +6,7 @@
 
 export rms_max=0.10
 export test_1d=1
-export test_2d=0
+export test_2d=1
 export test_3d=0
 export appli_1d=0
 
@@ -48,10 +48,26 @@ fi
 
 #-----------------------------------------------------------------
 # test eigen mode 1D
-#----------------------------------------------------------------
+#-----------------------------------------------------------------
 
+test_name=eigen_mode/1D
+test_dir=$DJANGO_DIR/script/$test_name
 test_opt=
 if [ "$test_1d" -eq 0 ]
+then
+    echo SKIP $test_name
+else
+    sh ./runDjango.sh $report_file $test_name $test_dir $test_opt
+fi
+
+#-----------------------------------------------------------------
+# test eigen mode 2D
+#-----------------------------------------------------------------
+
+test_name=eigen_mode/2D
+test_dir=$DJANGO_DIR/script/$test_name
+test_opt=
+if [ "$test_2d" -eq 0 ]
 then
     echo SKIP $test_name
 else

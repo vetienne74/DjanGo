@@ -9,7 +9,7 @@ passed="PASSED"
 warning="WARNING"
 
 echo ""
-echo "Running $test_name ..." | tee -a ${report_file} 
+echo "Running $test_name" $test_opt "..." | tee -a ${report_file} 
 
 if [ -d $test_dir ]
 then

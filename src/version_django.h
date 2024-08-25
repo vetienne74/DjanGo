@@ -1,4 +1,4 @@
-const char DJANGO_GIT_COMMIT[] = "commit 7db07faa5029303d9677b9a93c715314b859e326" ;
+const char DJANGO_GIT_COMMIT[] = "commit 360615313592d570146f05dd5eaba965995f1e62" ;
 const char DJANGO_GIT_AUTHOR[] = "Author: vincent <vetienne@rocketmail.com>" ;
-const char DJANGO_GIT_DATE[] = "Date:   Sat Aug 24 16:16:39 2024 +0200" ;
-const time_t DJANGO_COMPILE_DATE = 1724571175 ;
+const char DJANGO_GIT_DATE[] = "Date:   Sun Aug 25 10:15:09 2024 +0200" ;
+const time_t DJANGO_COMPILE_DATE = 1724576875 ;
