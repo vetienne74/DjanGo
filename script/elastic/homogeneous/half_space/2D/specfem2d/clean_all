@@ -1,0 +1,4 @@
+./clean
+
+rm -f vp.bin vs.bin rho.bin
+rm -f acquisition.config

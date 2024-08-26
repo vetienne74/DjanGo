@@ -5,9 +5,9 @@
 ##################################################################
 
 export rms_max=0.10
-export test_1d=1
-export test_2d=1
-export test_3d=0
+export test_1d=0
+export test_2d=0
+export test_3d=1
 export appli_1d=0
 
 export report_file=$1
@@ -152,6 +152,20 @@ test_name=acoustic/layer/infinite/2D
 test_dir=$DJANGO_DIR/script/$test_name
 test_opt=
 if [ "$test_2d" -eq 0 ]
+then
+    echo SKIP $test_name
+else
+    sh ./runDjango.sh $report_file $test_name $test_dir $test_opt
+fi
+
+#-----------------------------------------------------------------
+# test elastic homogeneous half-space 2D
+#-----------------------------------------------------------------
+
+test_name=elastic/homogeneous/half_space/2D
+test_dir=$DJANGO_DIR/script/$test_name
+test_opt=
+if [ "$test_3d" -eq 0 ]
 then
     echo SKIP $test_name
 else

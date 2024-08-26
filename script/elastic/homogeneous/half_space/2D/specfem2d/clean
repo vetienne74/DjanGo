@@ -1,0 +1,4 @@
+rm -f *.out
+rm -f *~
+rm -f out.txt
+rm -f *.tr
