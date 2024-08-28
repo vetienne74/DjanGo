@@ -1,0 +1,13 @@
+
+1D propagation of 'Speak to me' (Pink FLoyd)
+--------------------------------------------
+
+STEP 1: run DjanGo
+sh run.sh
+
+STEP 2: listen to computed sound
+run Matlab srcipt audio.m
+
+STEP 3: convert to mp3 with soundconverter
+
+END

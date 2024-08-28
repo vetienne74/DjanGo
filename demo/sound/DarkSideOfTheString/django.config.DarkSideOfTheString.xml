@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<django version="1">
+  <program type="modelling">
+
+    <domain>
+      <model dimension="1" type="grid" subtype="regular">
+	<!--size nz="110001"/-->
+	<!--sampling dz="0.01"/-->
+	<size nz="55001"/>
+	<sampling dz="0.02"/>
+	<parameter type="vp" constant="300.0"/>
+      </model>
+     
+      <scheme method="fdm" type="staggered">
+	<equation type="acoustic" order="1"/>
+	<accuracy space="4" time="2" dt="0.0"/>
+	<boundary edge="zbeg" type="freesurf" width="999" coef="999"/>      
+	<boundary edge="zend" type="cpml" width="20" coef="1.e-12"/>  
+      </scheme>
+    </domain>
+
+    <modelling>
+      <time tmax="17" rate="44100"/>
+      <source type="point" subtype="explosive" function="file" name="speak_to_me.in.bin" dt="2.26757e-5"/> 
+      <acquisition file="acquisition.config.out.ascii"/> 
+    </modelling>
+    
+  </program>
+</django>
+

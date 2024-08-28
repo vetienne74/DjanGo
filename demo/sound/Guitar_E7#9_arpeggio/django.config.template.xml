@@ -21,7 +21,7 @@
 
     <modelling>
       <time tmax="7.0" dt="2.26757e-5" snapshot="0.0"/>
-      <acquisition file="acquisition.config"/>
+      <acquisition file="acquisition.config.out.ascii"/>
       <source type="point" subtype="explosive" frequency="1000.0" function="rickerpp" t0="_t0_"/>      
     </modelling>
   </program>
