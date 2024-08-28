@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<django version="1">
+  <program type="modelling">
+
+    <domain>
+      <model dimension="1" type="grid" subtype="regular">
+	<size nz="1000"/>
+	<sampling dz="0.001"/>
+	<parameter type="vp" constant="_VP_"/>
+	<parameter type="loss1" constant="_LOSS1_"/>
+	<parameter type="loss2" constant="_LOSS2_"/>
+      </model>
+     
+      <scheme method="fdm" type="staggered">
+	<equation type="acoustic_lossy" order="2"/>
+	<accuracy space="2" time="2" dt="0.0" ratio_cfl="0.5"/>
+	<boundary edge="zbeg" type="freesurf" width="999" coef="999"/>
+	<boundary edge="zend" type="freesurf" width="999" coef="999"/>
+      </scheme>
+    </domain>
+
+    <modelling>
+      <time tmax="7.0" dt="2.26757e-5" snapshot="0.0"/>
+      <acquisition file="acquisition.config"/>
+      <source type="point" subtype="explosive" frequency="1000.0" function="rickerpp" t0="_t0_"/>      
+    </modelling>
+  </program>
+</django>

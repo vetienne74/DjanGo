@@ -1,0 +1,9 @@
+
+Play the 'Hendrix chord' on a 6-string guitar
+---------------------------------------------
+
+STEP 1: run DjanGo
+sh run.sh
+
+STEP 2: listen to computed sound
+run Matlab script audio.m

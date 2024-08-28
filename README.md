@@ -11,8 +11,7 @@ Contact: Vincent Etienne / Email: vetienne@rocketmail.com
 
 ## Description
 
-DjanGo is a versatile C++ tool for modelling wave propagation
-with finite-difference & finite-element methods. It targets applications towards wave propagation in water and sound modelling. Anyone who is interested in using DjanGo or contributing to its development is invited to contact me.  
+DjanGo is a versatile C++ tool for modelling wave propagation with finite-difference & finite-element methods. It targets applications towards wave propagation in various fields: geophysics, seismology, ocean acoustics and sound modelling to name a few. Anyone who is interested in using DjanGo or contributing to its development is invited to contact me.  
 
 Features of DjanGo
 - Wave propagation formulation
@@ -109,8 +108,8 @@ This script runs a set a light test cases and should complete within few minutes
 
 You should get in the ouptput report (displayed on the terminal)
 
-* All tests marked as PASSED
-* No test marked as FAILED
+* All tests Ok (PASSED 528)
+* No test with an error (FAILED 0) 
 
 Check the summary at the end of report to have a quick look on this.
 
@@ -133,11 +132,11 @@ DjanGo can be launched from a terminal with all configuration parameters within 
 
 # Directory description
 
-appli: applications (not yet available)
-
 bin: binaries
 
 build: compilation directory (Makefile is there)
+
+demo: some applications in geophysics and sound modelling
 
 env: environment scripts
 
@@ -149,4 +148,3 @@ script: validation scripts
 
 src: all source *.cpp files
 
-validation: various validation tests organised in categories (see 0readme in subfolders)
