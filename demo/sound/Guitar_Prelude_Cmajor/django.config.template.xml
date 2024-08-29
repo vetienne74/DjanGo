@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<django version="1">
+  <program type="guitar">
+
+    <domain>
+      <model dimension="1" type="grid" subtype="regular">
+	<size nz="651"/>
+	<sampling dz="0.001"/>
+	<parameter type="loss1" constant="4.e-5"/>
+	<parameter type="loss2" constant="4.e-8"/>
+	<parameter type="vp" file="vp.out.bin"/>
+      </model>
+     
+      <scheme method="fdm" type="staggered">
+	<equation type="acoustic_lossy" order="2"/>
+	<accuracy space="2" time="2" dt="0.0"/>
+	<boundary edge="zbeg" type="freesurf" width="999" coef="999"/>
+	<boundary edge="zend" type="freesurf" width="999" coef="999"/>
+      </scheme>
+    </domain>
+
+    <modelling>      
+      <time tmax="177.0" rate="44100" snapshot="0.0"/>
+      <acquisition file="acquisition.config"/>
+      <source type="point" subtype="explosive" function="file" name="force_string_num_.out.bin" dt="0.0001"/>
+    </modelling>
+
+    <guitar>
+      <left_hand file="left_hand_string_num_.out.bin" dt="0.0001"/>
+      <!--right_hand file="right_hand.bin"/-->
+    </guitar>
+  </program>
+</django>

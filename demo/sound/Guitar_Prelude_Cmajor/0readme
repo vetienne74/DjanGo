@@ -1,0 +1,20 @@
+
+Play Prelude in C major using Program Guitar
+--------------------------------------------
+
+STEP 1: clean files
+sh clean.sh
+
+STEP 2: prepare guitar files
+run Matlab script prepare_guitar_file.m
+
+STEP 3: run DjanGo
+sh run.sh
+
+STEP 4: listen to computed sound
+run Matlab srcipt audio.m
+
+STEP 5:  convert to mp3 with command
+mpg321 -w django.prelude.wav django.prelude.mp3
+
+END
